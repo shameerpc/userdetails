@@ -14,11 +14,6 @@ mongoose.connect('mongodb://localhost:27017/auth_demo',{
 .catch(err => console.error(err));
 
 
-
-
-
-
-
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // parse application/json
@@ -27,7 +22,10 @@ app.use(bodyParser.json())
 // app.get('/', (req, res) => {
 //   res.send('Hello yahya!')
 // })
-app.use('/',routes)
+
+app.use('/api/auth', require('./routes/user'));
+app.use('/api/products', require('./routes/products'));
+app.use('/api/cart', require('./routes/cart'));
 
 
 app.listen(port, () => {
