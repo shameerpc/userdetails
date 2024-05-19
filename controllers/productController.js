@@ -1,4 +1,4 @@
-const Products=require('../models/Products')
+
 var jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const Products = require('../models/Products');

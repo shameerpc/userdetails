@@ -6,7 +6,7 @@ var bodyParser = require('body-parser')
 const port = 3000
 
 
-mongoose.connect('mongodb://localhost:27017/auth_demo',{
+mongoose.connect('mongodb://localhost:27017/auth_demo', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })

@@ -12,3 +12,6 @@ routes.post('/cart',auth,cartController.addCart);
 routes.get('/cart', auth,cartController.listCart)
 routes.post('/cart',auth,cartController.updateCart);
 routes.get('/cart', auth,cartController.deleteCart);
+
+
+module.exports=routes;
