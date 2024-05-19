@@ -7,8 +7,8 @@ const auth = require('../middleware/auth');
 const productController=require('../controllers/productController');
 
 
-routes.post('/product',auth,productController.addProduct);
-routes.get('/product', auth,productController.listProduct)
+routes.post('/',auth,productController.addProduct);
+routes.get('/', auth,productController.listProduct)
 
 
 module.exports=routes;
