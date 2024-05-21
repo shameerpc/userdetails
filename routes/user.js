@@ -9,9 +9,9 @@ const userController=require('../controllers/userController');
 
 
 
-routes.post('/signup',auth,userController.registration)
+routes.post('/signup',userController.registration)
 
-routes.post('/login',auth,userController.login)
+routes.post('/login',userController.login)
 
 routes.get('/user-details',auth,async(req,res)=>{
      try {
